@@ -4,6 +4,21 @@ Latest on top.
 
 ## 2022-06-14
 
+Comments from PicoLisp creator: 
+```
+I would not recommend to start as
+
+   pil ./lib/xhtml.l +
+
+because this runs a global pil and a local library. They may mismatch because of
+different versions. Better is
+
+   pil @lib/xhtml +  # Global invocation
+
+or
+
+   ./pil lib/xhtml +  # Local invocation
+```
 ![picolisp_advanced-webapp_server_2022-06-13-14_1](picolisp_advanced-webapp_server_2022-06-13-14_1.jpg)
 
 ![picolisp_advanced-xhtml_2022-06-14_2](picolisp_advanced-xhtml_2022-06-14_2.jpg)

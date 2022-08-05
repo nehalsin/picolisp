@@ -1,5 +1,35 @@
 # PicoLisp Test Code
 
+## 2022-07-13
+
+- gps location on PilBox
+
+```
+android: (gps)
+-> (120309921 . 258010677)
+
+```
+
+
+
+## 2022-07-11
+
+- `and` 
+
+```
+: (and (+ 1 1) "hello")
+-> “hello”
+
+: (and (= 1 1) "Hello World")
+-> “Hello World”
+
+: (and (= 1 1) T)
+-> T
+
+: (and (= 1 -1) T)
+-> NIL
+```
+
 ## 2022-07-10
 
 - Code tested from [Intents and Java Interface blog](https://picolisp-explored.com/mobile-app-development-in-picolisp-vi-intents-and-the-java-interface)
@@ -188,6 +218,12 @@ android: ( view '( a ( b c d) e f g ( h ( i (j (k l m n o p]
 ![Screenshot_2022-06-14-2.browser.lightning](Screenshot_2022-06-14-2.browser.lightning.jpg)
 
 ## 2022-06-13
+
+- Comments from PicoLisp creator - 
+
+> ... I
+would recommend to load "http.l" before "xhtml.l", as the latter depends
+conceptually on the first.
 
 ```
 ~/pil21/lib $ pil +
